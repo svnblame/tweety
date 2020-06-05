@@ -7,7 +7,7 @@
                 </div>
 
                 <div class="lg:flex-1 lg:mx-10 lg:mb-10" style="max-width: 700px">
-                    {{ $slot }})
+                    {{ $slot }}
                 </div>
 
                 <div class="lg:w-1/6">
