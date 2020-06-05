@@ -12,7 +12,7 @@
             <button
                 class="bg-blue-500 rounded-lg shadow py-2 px-2 text-white"
                 type="submit">
-                Tweet-a-roo!
+                Publish
             </button>
         </footer>
     </form>
