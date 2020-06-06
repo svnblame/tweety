@@ -46,10 +46,6 @@ class User extends Authenticatable
 
     public function timeline()
     {
-        // include all of the user's tweets
-        // as well as the tweets of everyone they follow
-        // in descending order by date
-
         $friends = $this->follows()->pluck('id');
 
         return Tweet::whereIn('user_id', $friends)
@@ -61,5 +57,12 @@ class User extends Authenticatable
     public function tweets()
     {
         return $this->hasMany(Tweet::class);
+    }
+
+    public function path($append = '')
+    {
+        $path = route('profile', $this->name);
+
+        return $append ? "{$path}/{$append}" : $path;
     }
 }
