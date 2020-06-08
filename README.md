@@ -3,6 +3,6 @@ Laravel From Scratch
 Final Project
 
 Next:
-Episode 65 - Build the Explore Users Page
+Episode 66 - Clean Up
 
-https://laracasts.com/series/laravel-6-from-scratch/episodes/65
+https://laracasts.com/series/laravel-6-from-scratch/episodes/66
