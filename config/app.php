@@ -229,4 +229,8 @@ return [
 
     ],
 
+    'paths' => [
+        'default-avatar' => env('DEFAULT_AVATAR_PATH'),
+    ]
+
 ];
