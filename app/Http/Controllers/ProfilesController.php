@@ -9,7 +9,12 @@ class ProfilesController extends Controller
 {
     public function show(User $user)
     {
-        return view('profiles.show', compact('user'));
+        return view(
+            'profiles.show',
+            [
+                'user' => $user,
+                'tweets' => $user->tweets()->paginate(config('view.paginate')),
+            ]);
     }
 
     public function edit(User $user)
