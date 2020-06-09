@@ -6,7 +6,7 @@
         </div>
 
         <div class="flex justify-between items-center mb-6">
-            <div>
+            <div style="max-width: 270px">
                 <div class="flex justify-between items-center">
                     <h2 class="font-bold text-2xl mb-0">{{ $user->name }}</h2>
                 </div>
@@ -32,5 +32,7 @@
         qui officia deserunt mollit anim id est laborum.
     </div>
 
-    @include('_timeline', ['tweets' => $user->tweets])
+    @include('_timeline', [
+        'tweets' => $tweets
+    ])
 </x-app>
