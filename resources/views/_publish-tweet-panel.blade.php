@@ -2,18 +2,20 @@
     <form method="POST" action="/tweet">
         @csrf
 
-        <textarea class="w-full" name="body" placeholder="What's up doc?"></textarea>
+        <textarea
+            class="w-full"
+            name="body"
+            placeholder="What's up doc?"
+            required
+            autofocus
+        ></textarea>
 
         <hr class="my-4">
 
-        <footer class="flex justify-between">
+        <footer class="flex justify-between items-center">
             <img class="rounded-full mr-2" src="{{ current_user()->avatar }}" alt="Avatar">
 
-            <button
-                class="bg-blue-500 rounded-lg shadow py-2 px-2 text-white"
-                type="submit">
-                Publish
-            </button>
+            <x-publish-button></x-publish-button>
         </footer>
     </form>
 
