@@ -3,6 +3,6 @@ Laravel From Scratch
 Final Project
 
 Next:
-Episode 66 - Clean Up
+Episode 67 - Build a Like/Dislike System
 
-https://laracasts.com/series/laravel-6-from-scratch/episodes/66
+https://laracasts.com/series/laravel-6-from-scratch/episodes/67
