@@ -13,7 +13,12 @@ class ProfilesController extends Controller
             'profiles.show',
             [
                 'user' => $user,
-                'tweets' => $user->tweets()->paginate(config('view.paginate')),
+                'tweets' => $user
+                    ->tweets()
+                    ->withLikes()
+                    ->paginate(
+                        config('view.paginate')
+                    ),
             ]);
     }
 
